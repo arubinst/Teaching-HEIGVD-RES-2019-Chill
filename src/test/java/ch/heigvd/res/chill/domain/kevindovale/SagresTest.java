@@ -9,24 +9,24 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SuperbockTest {
+class SagresTest {
 
     @Test
     void getName() {
 
-        Superbock beer = new Superbock();
-        assertEquals(beer.getName(), Superbock.NAME);
-        assertEquals(beer.getPrice(), Superbock.PRICE);
+        Sagres beer = new Sagres();
+        assertEquals(beer.getName(), Sagres.NAME);
+        assertEquals(beer.getPrice(), Sagres.PRICE);
     }
 
     @Test
     void getPrice() {
 
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.kevindovale.Superbock";
+        String productName = "ch.heigvd.res.chill.domain.kevindovale.Sagres";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
-        BigDecimal expectedTotalPrice = Superbock.PRICE.multiply(new BigDecimal(3));
+        BigDecimal expectedTotalPrice = Sagres.PRICE.multiply(new BigDecimal(3));
         assertEquals(expectedTotalPrice, response.getTotalPrice());
     }
 }

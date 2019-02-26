@@ -12,14 +12,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class WittekopTest {
 
     @Test
-    void thePriceAndNameForDeliriumShouldBeCorrect() {
+    void thePriceAndNameForWittekopShouldBeCorrect() {
         Wittekop beer = new Wittekop();
         assertEquals(beer.getName(), Wittekop.NAME);
         assertEquals(beer.getPrice(), Wittekop.PRICE);
     }
 
     @Test
-    void aBartenderShouldAcceptAnOrderForDelirium() {
+    void aBartenderShouldAcceptAnOrderForWittekop() {
         Bartender joe = new Bartender();
         String productName = "ch.heigvd.res.chill.domain.thibaudalt.Wittekop";
         OrderRequest request = new OrderRequest(2, productName);

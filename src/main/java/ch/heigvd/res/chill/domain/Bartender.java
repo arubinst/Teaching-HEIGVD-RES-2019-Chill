@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 public class Bartender {
 
   public GreetingsResponse greet(GreetingsRequest request) {
+    // return greetings response
     return new GreetingsResponse("hello, how can I help you?");
   }
 

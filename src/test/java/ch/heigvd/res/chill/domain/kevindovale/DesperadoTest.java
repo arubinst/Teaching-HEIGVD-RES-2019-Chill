@@ -22,7 +22,7 @@ class DesperadoTest {
     void getPrice() {
 
         Bartender jane = new Bartender();
-        String productName = "ch.heigvd.res.chill.domain.wasadigi.Desperado";
+        String productName = "ch.heigvd.res.chill.domain.kevindovale.Desperado";
         OrderRequest request = new OrderRequest(3, productName);
         OrderResponse response = jane.order(request);
         BigDecimal expectedTotalPrice = Desperado.PRICE.multiply(new BigDecimal(3));

@@ -1,4 +1,4 @@
-package ch.heigvd.res.chill.domain.wasadigi;
+package ch.heigvd.res.chill.domain.kevindovale;
 
 import ch.heigvd.res.chill.domain.Bartender;
 import ch.heigvd.res.chill.protocol.OrderRequest;

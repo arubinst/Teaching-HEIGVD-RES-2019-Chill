@@ -6,5 +6,8 @@ import lombok.Data;
 public class GreetingsRequest implements IMessage {
 
   private final String text;
+  public GreetingsRequest(String greetingRequest){
+    this.text = greetingRequest;
+  }
 
 }

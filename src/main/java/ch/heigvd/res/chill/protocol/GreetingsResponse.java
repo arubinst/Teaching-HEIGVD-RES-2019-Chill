@@ -2,6 +2,7 @@ package ch.heigvd.res.chill.protocol;
 
 import lombok.Data;
 
+
 @Data
 public class GreetingsResponse implements IMessage {
 
@@ -10,4 +11,8 @@ public class GreetingsResponse implements IMessage {
     this.text = greetingsResponse;
   }
 
+  public String getText(){
+
+    return text;
+  }
 }

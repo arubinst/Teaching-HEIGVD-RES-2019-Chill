@@ -22,6 +22,7 @@ public class Bartender {
       BigDecimal totalPrice = product.getPrice().multiply(new BigDecimal(request.getQuantity()));
       return new OrderResponse(totalPrice);
     } catch (Exception e) {
+
       return null;
     }
   }

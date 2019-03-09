@@ -12,7 +12,6 @@ public class GreetingsResponse implements IMessage {
   }
 
   public String getText(){
-
     return text;
   }
 }

@@ -10,4 +10,8 @@ public class GreetingsRequest implements IMessage {
     this.text = greetingRequest;
   }
 
+  public String getTest(){
+    return text;
+  }
+
 }

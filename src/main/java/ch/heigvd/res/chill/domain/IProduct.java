@@ -7,4 +7,5 @@ public interface IProduct {
   String getName();
   BigDecimal getPrice();
 
+
 }
